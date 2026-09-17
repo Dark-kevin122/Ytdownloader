@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetchreel — video downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none">
+        <rect width="24" height="24" rx="6" fill="var(--accent)" />
+        <path d="M9.5 8l6 4-6 4V8z" fill="#fff" />
+      </svg>
+      Ytsave
+    </div>
+    <nav>
+      <a href="./index.html">YouTube</a>
+      <a href="./Ytmp3.html" class="active">YouTube to MP3</a>
+    </nav>
+    <div class="header-spacer"></div>
+  </header>
+
+
+  <main>
+    <h1> Free YouTube to MP3 Downloader</h1>
+
+    <div class="search-row">
+      <input id="url" type="text" placeholder="Paste your video link here" autocomplete="off">
+      <button id="goBtn">Download</button>
+    </div>
+
+
+
+
+
+
+
+    <p class="error-msg" id="errorMsg">Sahi YouTube URL daalo.</p>
+    <p class="legal-line">By using our service you accept our <a href="./Terms of service.html">Terms of Service</a> and <a
+        href="./Privacy policy.html">Privacy Policy</a>
+      accept karte hain.</p>
+
+    <div class="progress-block" id="progressBlock">
+      <div class="progress-meta"><span id="pStatus">Preparing…</span><span id="pPct">0%</span></div>
+      <div class="progress-track">
+        <div class="progress-fill" id="pFill"></div>
+      </div>
+    </div>
+
+    <div class="trust-row">
+      <span>★ Scanned and rated safe</span>
+    </div>
+    <div class="rating-row">
+      <span class="stars">★★★★★</span>
+      <span>4.8 / 5 · 12,304 reviews</span>
+    </div>
+
+    <div class="format-grid">
+      <div class="format-card"><span class="format-icon" style="background:#d9622b;">MP4</span>YouTube Mp4</div>
+      <div class="format-card"><span class="format-icon" style="background:#c94a3f;">♪</span>YouTube Mp3</div>
+
+    </div>
+
+  
+    <section class="howto-section">
+      <h2 class="howto-title">How to Use</h2>
+      <div class="howto-grid">
+
+        <div class="howto-card">
+          <div class="howto-text">
+            <span class="howto-step">Step 1</span>
+            <h3>Copy YouTube video link</h3>
+            <p>Go to the video of your choice and copy the URL from the browser's address bar.</p>
+          </div>
+          <div class="howto-visual">
+            <div class="mockup-bar">
+              <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-input-row">
+              <span class="mockup-url">youtube.com/watch?v=dXIyMS61B68</span>
+              <span class="mockup-icon-btn">⧉</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="howto-card">
+          <div class="howto-text">
+            <span class="howto-step">Step 2</span>
+            <h3>Paste to Ytsave</h3>
+            <p>Open Yatsve and paste the copied YouTube link into the search box.</p>
+          </div>
+          <div class="howto-visual">
+            <div class="mockup-bar">
+              <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-input-row">
+              <span class="mockup-url mockup-placeholder">Paste your video link here</span>
+              <span class="mockup-icon-btn accent">➜</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="howto-card">
+          <div class="howto-text">
+            <span class="howto-step">Step 3</span>
+            <h3>Hit Download</h3>
+            <p>
+              Press the download button — Yatsve will scan the video and display the available qualities.</p>
+          </div>
+          <div class="howto-visual">
+            <div class="mockup-bar">
+              <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-brand">Ytsave</div>
+            <div class="mockup-search-row">
+              <span class="mockup-placeholder">youtube.com/watch…</span>
+              <span class="mockup-download-btn">Download</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="howto-card">
+          <div class="howto-text">
+            <span class="howto-step">Step 4</span>
+            <h3>Choose format &amp; quality</h3>
+            <p>Choose your preferred format and high-quality resolution — the size will also be displayed.</p>
+          </div>
+          <div class="howto-visual">
+            <div class="mockup-bar">
+              <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-quality-row">
+              <span class="mockup-quality-chip">1080P <b>MP4</b></span>
+              <span class="mockup-size">12MB</span>
+              <span class="mockup-download-btn small">Download</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="howto-card wide">
+          <div class="howto-text">
+            <span class="howto-step">Step 5</span>
+            <h3>Save instantly</h3>
+            <p>
+              As soon as you click the final download button, the file will immediately start saving to your device.</p>
+          </div>
+          <div class="howto-visual">
+            <div class="mockup-brand">Ytsave</div>
+            <div class="mockup-final-row">
+              <span class="mockup-download-btn large">⬇ Download</span>
+              <span class="mockup-arrow">➜</span>
+              <span class="mockup-folder">🗂</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="faq-section">
+      <h2 class="faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question">
+            <span>How do I download YouTube videos?</span>
+            <span class="faq-chevron">⌄</span>
+          </button>
+          <div class="faq-answer">
+            <p>Paste the YouTube video URL into the input box on our homepage and click “Download.” Our YouTube video
+              downloader will process the link and show the available download options. Select your preferred video
+              format and quality, then save the file to your device.
+
+              Our tool is designed to make downloading videos simple and quick across supported devices. For content you
+              download, make sure you have the necessary rights or permission and follow YouTube’s Terms of Service.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the best YouTube video downloader app?</span>
+            <span class="faq-chevron">⌄</span>
+          </button>
+          <div class="faq-answer">
+            <p>A good YouTube video downloader should be simple to use, fast, and support different video formats and
+              quality options. Choose a downloader that works smoothly on your device and clearly explains its supported
+              formats and usage requirements.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Where can I download YouTube videos online?</span>
+            <span class="faq-chevron">⌄</span>
+          </button>
+          <div class="faq-answer">
+            <p>You can use an online YouTube video downloader by opening the downloader website, pasting the video URL,
+              and selecting the available download option. Online tools can be convenient because they generally do not
+              require you to install additional software.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How can I download YouTube videos to my PC?</span>
+            <span class="faq-chevron">⌄</span>
+          </button>
+          <div class="faq-answer">
+            <p>To download a YouTube video to your PC, copy the video's URL and paste it into a compatible YouTube video
+              downloader. Click “Download”, select an available format and quality, and save the resulting file to your
+              computer. Make sure you have permission to download the content and follow YouTube's Terms of Service.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How can I download a YouTube video using a URL?</span>
+            <span class="faq-chevron">⌄</span>
+          </button>
+          <div class="faq-answer">
+            <p>Copy the URL of the YouTube video you want to download and paste it into the URL field on the
+              downloader's homepage. Click “Download”, choose from the available format and quality options, and save
+              the file to your device. Always ensure that you have the necessary rights or permission to download the
+              video.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect width="24" height="24" rx="6" fill="var(--accent)" />
+            <path d="M9.5 8l6 4-6 4V8z" fill="#fff" />
+          </svg>
+          Fetchreel
+        </div>
+        <p class="footer-tagline"></p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3>Platforms</h3>
+          <a href="#">YouTube</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="./Terms of service.html">Terms of service</a>
+          <a href="./Privacy policy.html">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fetchreel</span>
+    </div>
+  </footer>
+
+  <script src="Ytmp3.js"></script>
+</body>
+
+</html>
