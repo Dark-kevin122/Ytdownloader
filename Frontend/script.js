@@ -1,4 +1,4 @@
-const BACKEND = 'http://localhost:5000';
+const BACKEND = 'http://localhost:5000/api';
 
 const goBtn = document.getElementById('goBtn');
 const urlInput = document.getElementById('url');
